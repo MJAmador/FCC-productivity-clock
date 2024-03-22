@@ -1,0 +1,118 @@
+:root {
+    --light-blue: rgb(33, 131, 124);
+    --dark-blue: rgb(21, 99, 94);
+}
+
+.container {
+    background-color: var(--light-blue);
+    min-height: 100vh;
+}
+
+.container .clock {
+    padding-top: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .clock h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 55px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--light-blue);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.container .clock .setters {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.container .clock .setters .break {
+    padding: 20px;
+    width: 220px;
+    border: 7px solid var(--dark-blue);
+    border-radius: 35px;
+}
+
+.container .clock .setters .session {
+    padding: 20px;
+    width: 220px;
+    border: 7px solid var(--dark-blue);
+    border-radius: 35px;
+}
+
+.container .clock .setters h4 {
+    font-size: 32px;
+    margin-top: 8px;
+}
+
+span[id$="length"] {
+    display: inline-block;
+    width: 40px;
+    font-size: 37px;
+    padding-left: 10px;
+}
+
+.controls-button {
+    width: 40px;
+    font-size: 29px;
+}
+
+.display {
+    margin: 18px;
+    width: 250px;
+    padding-top: 10px;
+    border: 7px solid var(--dark-blue);
+    border-radius: 35px;
+}
+
+#timer-label {
+    font-size: 35px;
+    margin-bottom: -15px;
+}
+
+#time-left {
+    font-size: 70px;
+    margin-bottom: -15px;
+}
+
+.display {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    margin: 10px;
+    width: 220px;
+    text-align: center;
+    font-size: 17px;
+    color: darkred;
+}
+
+@media screen and (max-width: 650px) {
+    .container .clock {
+        transform: scale(0.8);
+        width: 90%;
+        padding: 0;
+    }  
+}
